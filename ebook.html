@@ -1,195 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neluheni's Portfolio</title>
-  <style>
-    /* Reset some default styles */
-    body, h1, h2, p {
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neluheni's Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      background-image: linear-gradient(45deg, #00c3ff, #005eff);
-      background-size: 200% 200%;
-      animation: gradientAnimation 10s ease infinite;
-    }
+        /* Background and global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+        /* Header styling */
+        header {
+            background-color: #005eff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-    /* Header styling */
-    header {
-      background-color: #f2f2f2;
-      padding: 20px;
-      text-align: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
+        header h1 {
+            font-size: 36px;
+        }
 
-    header h1 {
-      font-size: 24px;
-    }
+        /* Main container */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    /* Logo animation */
-    .logo {
-      display: inline-block;
-      position: relative;
-    }
+        /* Profile and achievements */
+        .profile h2,
+        .achievements h2 {
+            margin-bottom: 10px;
+        }
 
-    .book {
-      width: 80px;
-      height: 80px;
-      background-color: #005eff;
-      position: relative;
-      overflow: hidden;
-      transform-style: preserve-3d;
-      animation: bookAnimation 5s infinite ease-in-out;
-    }
+        .profile p,
+        .achievements li {
+            margin: 5px 0;
+        }
 
-    .page {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      transform-style: preserve-3d;
-      backface-visibility: hidden;
-      transform-origin: right center;
-    }
+        .achievements ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-    .page:before,
-    .page:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-color: #f2f2f2;
-      position: absolute;
-      transform: rotateY(0deg) translateZ(1px);
-    }
+        .achievements li::before {
+            content: "✓ ";
+            color: #28a745;
+        }
 
-    @keyframes bookAnimation {
-      0%, 100% {
-        transform: rotateY(0deg);
-      }
-      50% {
-        transform: rotateY(-180deg);
-      }
-    }
-
-    /* Main content container */
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    /* Profile and achievements */
-    .profile h2,
-    .achievements h2 {
-      margin-bottom: 10px;
-    }
-
-    .profile p,
-    .achievements li {
-      margin: 5px 0;
-    }
-
-    .achievements ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .achievements li::before {
-      content: "✓ ";
-      color: #28a745;
-    }
-
-    /* Contact details */
-    .contact p {
-      margin-bottom: 5px;
-    }
-  </style>
+        /* Contact details */
+        .contact p {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <div class="book">
-        <div class="page"></div>
-      </div>
-    </div>
-    <h1>Neluheni Mutshidzi Ramudzuli - Portfolio</h1>
-  </header>
+<header>
+    <h1>Neluheni Mutshidzi Ramudzuli</h1>
+</header>
 
-  <div class="container">
+<div class="container">
     <h2>Profile</h2>
     <div class="profile">
-      <h2>Name:</h2>
-      <p>Neluheni Mutshidzi Ramudzuli</p>
+        <h2>Name:</h2>
+        <p>Neluheni Mutshidzi Ramudzuli</p>
     </div>
 
     <div class="profile">
-      <h2>Education:</h2>
-      <p>Swongozwi Secondary School (NCS) : 2019</p>
-      <p>Tshwane University of Technology : 2020-2023</p>
-      <p>Diploma in Informatics ICT</p>
+        <h2>Education:</h2>
+        <p>Swongozwi Secondary School (NCS): 2019</p>
+        <p>Tshwane University of Technology: 2020-2023</p>
+        <p>Diploma in Informatics ICT</p>
     </div>
 
     <div class="profile">
-      <h2>Work Experience:</h2>
-      <p>Business Analyst: 2023 August - Present</p>
-      <p>ICEP</p>
+        <h2>Work Experience:</h2>
+        <p>Business Analyst: 2023 August - Present</p>
+        <p>ICEP</p>
     </div>
 
     <div class="profile">
-      <h2>Projects:</h2>
-      <p>Smart Eye Care System (Final Year TUT Informatics Student Project)</p>
-      <p>Q-phela (ICEP Mobile App Aimed to Raise Awareness and Reduce Crime)</p>
+        <h2>Projects:</h2>
+        <p>Smart Eye Care System (Final Year TUT Informatics Student Project)</p>
+        <p>Q-phela (ICEP Mobile App Aimed to Raise Awareness and Reduce Crime)</p>
     </div>
 
     <div class="profile">
-      <h2>Achievements:</h2>
-      <ul>
-        <li>2019 Swongozwi Best Learner</li>
-        <li>2023 Merit Bursaries awarded from Tshwane University of Technology for performance in my final year</li>
-      </ul>
+        <h2>Achievements:</h2>
+        <ul>
+            <li>2019 Swongozwi Best Learner</li>
+            <li>2023 Merit Bursaries awarded from Tshwane University of Technology for performance in my final year</li>
+        </ul>
     </div>
 
     <div class="profile">
-      <h2>Certificates:</h2>
-      <p>Code C1 driver's license</p>
-      <p><a href="https://www.credly.com/go/0Hsf2H60">AWS Cloud Foundation</a></p>
+        <h2>Certificates:</h2>
+        <p>Code C1 driver's license</p>
+        <p><a href="https://www.credly.com/go/0Hsf2H60">AWS Cloud Foundation</a></p>
     </div>
 
     <div class="contact">
-      <h2>Contact Details:</h2>
-      <p>Phone: 0796128038</p>
-      <p>Email: neluhenimr4jobs@gmail.com</p>
-      <p>Email (University): 221077717@tut4life.ac.za</p>
-      <p>Address: Pretoria</p>
+        <h2>Contact Details:</h2>
+        <p>Phone: 0796128038</p>
+        <p>Email: neluhenimr4jobs@gmail.com</p>
+        <p>Email (University): 221077717@tut4life.ac.za</p>
+        <p>Address: Pretoria</p>
     </div>
-  </div>
-
-  <!-- Additional content sections can be added here -->
-
-  <!-- JavaScript and additional HTML sections can be added as needed -->
+</div>
 </body>
 </html>
