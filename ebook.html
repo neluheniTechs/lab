@@ -17,17 +17,22 @@
             background: #f2f2f2;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-image: url('background.jpg'); /* Set the background image */
+            color: white; /* Set the text color to white */
+            background-image: url('https://images.pexels.com/photos/2292837/pexels-photo-2292837.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Set the background image */
             background-size: cover; /* Make the background image cover the entire viewport */
         }
 
-        /* Profile and achievements */
+        /* Improve text visibility */
         .profile h2,
-        .achievements h2 {
-            margin-bottom: 10px;
+        .achievements h2,
+        .contact h2,
+        .graph-container h2 {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            color: white; /* White text color */
+            padding: 5px; /* Add padding for better readability */
         }
 
+        /* Profile and achievements */
         .profile p,
         .achievements li {
             margin: 5px 0;
@@ -55,18 +60,14 @@
         }
 
         .graph {
-            width: 400px;
-            height: 300px;
+            max-width: 100%;
             display: flex;
-            align-items: flex-end;
-            margin: 0 auto;
-            border: 1px solid #ccc;
-            background-color: #f2f2f2;
-            overflow: hidden;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .bar {
-            width: 20%;
+            flex: 1;
             background-color: #3498db;
             margin: 0 5px;
             transition: height 0.5s ease;
@@ -74,10 +75,11 @@
             flex-direction: column;
             justify-content: flex-end;
             text-align: center;
+            padding: 10px;
         }
 
         .bar span {
-            color: #fff;
+            color: white; /* White text color */
             font-weight: bold;
             margin-top: 10px;
         }
@@ -119,7 +121,7 @@
 <div class="profile">
     <h2>Certificates:</h2>
     <p>Code C1 driver's license</p>
-    <p><a href="https://www.credly.com/go/0Hsf2H60" style="color: #3498db;">AWS Cloud Foundation</a></p>
+    <p><a href="https://www.credly.com/go/0Hsf2H60" style="color: #3498db; color: white;">AWS Cloud Foundation</a></p>
 </div>
 
 <div class="contact">
@@ -133,20 +135,23 @@
 <div class="graph-container">
     <h2>My Careers</h2>
     <div class="graph">
-        <div class="bar" style="height: 60%">
+        <div class="bar" style="height: 60%;">
             <span>Business Analyst</span>
         </div>
-        <div class="bar" style="height: 80%">
+        <div class="bar" style="height: 80%;">
             <span>System Analyst</span>
         </div>
-        <div class="bar" style="height: 40%">
+        <div class="bar" style="height: 40%;">
             <span>IT Project Manager</span>
         </div>
-        <div class="bar" style="height: 70%">
+        <div class="bar" style="height: 70%;">
             <span>System Tester</span>
         </div>
-        <div class="bar" style="height: 50%">
+        <div class="bar" style="height: 50%;">
             <span>Database Administrator</span>
+        </div>
+        <!-- Add more careers -->
+       
         </div>
     </div>
 </div>
