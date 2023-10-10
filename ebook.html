@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neluheni's Portfolio</title>
-   
+   <img src="/crop/h298/w1101/102/2023 files/Banners/informatics-banner-2.zp240833.jpg" class="img-fluid d-block" alt="" draggable="false">
 </head><style>
 
 <style>
@@ -310,6 +310,68 @@ body {
         margin: 10px 0;
     }
 }
+.career-progress {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .career-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .career-label {
+            font-weight: bold;
+        }
+
+        .career-bar-container {
+            background-color: #3498db;
+            border-radius: 5px;
+            height: 30px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .career-bar-fill {
+            background-color: #2ecc71;
+            height: 100%;
+            width: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: fillAnimation 2s ease-in-out;
+        }
+
+        @keyframes fillAnimation {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 70%; /* Adjust this value to represent your career progress */
+            }
+        }
+		/* Add this CSS to create a continuous moving green bar */
+@keyframes moveGreenBar {
+    0% {
+        left: -100%; /* Start off the screen on the left */
+    }
+    100% {
+        left: 100%; /* Move to the right, off the screen */
+    }
+}
+
+.career-bar-fill.green {
+    background-color: #2ecc71;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off the screen on the left */
+    animation: moveGreenBar 10s linear infinite; /* Adjust duration and timing as needed */
+}
+
 
 </style>
 
@@ -457,6 +519,55 @@ https://youtu.be/RTIUESb5NdY
         }
     }
 </script>
+ <div class="career-progress">
+        <h2>my Career paths</h2>
+        <div class="career-bar">
+            <div class="career-label">Business Analyst</div>
+            <div class="career-bar-container">
+                <div class="career-bar-fill"></div>
+            </div>
+        </div>
+        <div class="career-bar">
+            <div class="career-label">System Analyst</div>
+            <div class="career-bar-container">
+                <div class="career-bar-fill"></div>
+            </div>
+        </div>
+        <div class="career-bar">
+            <div class="career-label">DBA</div>
+            <div class="career-bar-container">
+                <div class="career-bar-fill"></div>
+            </div>
+        </div>
+        <div class="career-bar">
+            <div class="career-label">Project Management</div>
+            <div class="career-bar-container">
+                <div class="career-bar-fill"></div>
+            </div>
+        </div>
+        <div class="career-bar">
+            <div class="career-label">Data Analyst</div>
+            <div class="career-bar-container">
+                <div class="career-bar-fill"></div>
+            </div>
+        </div>
+        <div class="career-bar">
+            <div class="career-label">IT Auditor</div>
+            <div class="career-bar-container">
+                <div class="career-bar-fill"></div>
+            </div>
+        </div>
+        <div class="career-bar">
+            <div class="career-label">Tester</div>
+            <div class="career-bar-container">
+                <div class="career-bar-fill"></div>
+            </div>
+        </div>
+    </div>
 </body>
+</body>
+
+
+
 </html>
 
