@@ -4,169 +4,459 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neluheni's Portfolio</title>
+   
+</head><style>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+		cursor: pointer;
+	}
+
+	.background {
+		background: black;
+		background-blend-mode: darken;
+		background-size: cover;
+	}
+
+	.nav-list {
+		width: 70%;
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo img {
+		width: 180px;
+		border-radius: 50px;
+	}
+
+	.nav-list li {
+		list-style: none;
+		padding: 26px 30px;
+	}
+
+	.nav-list li a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.nav-list li a:hover {
+		color: grey;
+	}
+
+	.rightnav {
+		width: 30%;
+		text-align: right;
+	}
+
+	#search {
+		padding: 5px;
+		font-size: 17px;
+		border: 2px solid grey;
+		border-radius: 9px;
+	}
+
+	.firstsection {
+		background-color: green;
+		height: 400px;
+	}
+
+	.secondsection {
+		background-color: blue;
+		height: 400px;
+	}
+
+	.box-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: black;
+		max-width: 80%;
+		margin: auto;
+		height: 80%;
+	}
+
+	.firsthalf {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.secondhalf {
+		width: 30%;
+	}
+
+	.secondhalf img {
+		width: 70%;
+		border: 4px solid white;
+		border-radius: 150px;
+		display: block;
+		margin: auto;
+	}
+
+	.text-big {
+		font-family: 'Piazzolla', serif;
+		font-weight: bold;
+		font-size: 35px;
+	}
+
+	.text-small {
+		font-size: 18px;
+	}
+
+	.btn {
+		padding: 8px 20px;
+		margin: 7px 0;
+		border: 2px solid white;
+		border-radius: 8px;
+		background: none;
+		color: white;
+		cursor: pointer;
+	}
+
+	.btn-sm {
+		padding: 6px 10px;
+		vertical-align: middle;
+	}
+
+	.section {
+		height: 400px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 90%;
+		margin: auto;
+	}
+
+	.section-Left {
+		flex-direction: row-reverse;
+	}
+
+	.paras {
+		padding: 0px 65px;
+	}
+
+	.thumbnail img {
+		width: 250px;
+		border: 2px solid black;
+		border-radius: 26px;
+		margin-top: 19px;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.text-footer {
+		text-align: center;
+		padding: 30px 0;
+		font-family: 'Ubuntu', sans-serif;
+		display: flex;
+		justify-content: center;
+		color: white;
+	}
+	/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list ul li {
+    margin-right: 20px;
+}
+
+.nav-list ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #3498db;
+}
+
+/* Main content styles */
+.background {
+    background: url('your-background-image.jpg') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.secondhalf img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #333;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+.text-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Card styles */
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card .content {
+    display: none;
+}
+
+.card .icon::before {
+    content: "+";
+    float: right;
+    font-weight: bold;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .nav-list {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-list ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list ul li {
+        margin: 10px 0;
+    }
+}
+
+</style>
+
+
+
+</style>
+<body>
+<div class="profile">
+    <h2>Name:Neluheni Mutshidzi Ramudzuli</h2>
+	<h6>
+	<h6 style="text-align: center;">
+    <img width="160" src="https://media.licdn.com/dms/image/D4D35AQFVMHLP_C6SZw/profile-framedphoto-shrink_100_100/0/1681410136803?e=1697547600&amp;v=beta&amp;t=G_EQb1R6Cq8U0pP0qAAMgVcuC073rC6EXIlhPoUcXQM" loading="lazy" height="160" alt="Photo of Neluheni Mutshidzi Ramudzuli" id="ember12938" class="feed-identity-module__member-photo EntityPhoto-circle-5 evi-image lazy-image ember-view">
+    <p>My CV Profile</p>
+</h6>
+
+	</h6>
+	<style>
+	#h6{
+	
+	position:center;
+	
+	}
+	</style>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neluheni's Portfolio</title>
     <style>
-        /* Reset some default styles */
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
+        /* Your existing CSS styles */
+        /* ... */
 
-        /* Background and global styles */
-        body {
-            font-family: Arial, sans-serif;
-      
-            margin: 0;
-            padding: 0;
-          background-color:#34282C;
-            color: white; /* Set the text color to white */
-             background-image: url('https://www.pexels.com/photo/black-flat-screen-computer-monitor-1714208/');
-            background-size: cover; /* Make the background image cover the entire viewport */
-        }
-
-        /* Improve text visibility */
-        .profile h2,
-        .achievements h2,
-        .contact h2,
-        .graph-container h2 {
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-            color: white; /* White text color */
-            padding: 5px; /* Add padding for better readability */
-        }
-
-        /* Profile and achievements */
-        .profile p,
-        .achievements li {
-            margin: 5px 0;
-        }
-
-        .achievements ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .achievements li::before {
-            content: "✓ ";
-            color: #28a745;
-        }
-
-        /* Contact details */
-        .contact p {
-            margin-bottom: 5px;
-        }
-
-        /* Graph styles */
-        .graph-container {
-            margin: 20px auto;
-            text-align: center;
-        }
-
-        .graph {
-            max-width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .bar {
-            flex: 1;
-            background-color: #3498db;
-            margin: 0 5px;
-            transition: height 0.5s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            text-align: center;
+        /* Add styles for the card container */
+        .card {
+            border: 1px solid #ccc;
             padding: 10px;
+            margin: 10px;
+            cursor: pointer;
         }
 
-        .bar span {
-            color: white; /* White text color */
-            font-weight: bold;
-            margin-top: 10px;
+        /* Style for the expand/collapse icon */
+        .card .icon::before {
+            content: "+";
+            float: right;
         }
     </style>
 </head>
 <body>
 <div class="profile">
-    <h2>Name:</h2>
-    <p>Neluheni Mutshidzi Ramudzuli</p>
-</div>
-
-<div class="profile">
-    <h2>Education:</h2>
-    <p>Swongozwi Secondary School (NCS): 2019</p>
-    <p>Tshwane University of Technology: 2020-2023</p>
-    <p>Diploma in Informatics ICT</p>
-</div>
-
-<div class="profile">
-    <h2>Work Experience:</h2>
-    <p>Business Analyst: 2023 August - Present</p>
-    <p>ICEP</p>
-</div>
-
-<div class="profile">
-    <h2>Projects:</h2>
-    <p>Smart Eye Care System (Final Year TUT Informatics Student Project)</p>
-    <p>Q-phela (ICEP Mobile App Aimed to Raise Awareness and Reduce Crime)</p>
-</div>
-
-<div class="profile">
-    <h2>Achievements:</h2>
-    <ul>
-        <li>2019 Swongozwi Best Learner</li>
-        <li>2023 Merit Bursaries awarded from Tshwane University of Technology for performance in my final year</li>
-    </ul>
-</div>
-
-<div class="profile">
-    <h2>Certificates:</h2>
-    <p>Code C1 driver's license</p>
-    <p><a href="https://www.credly.com/go/0Hsf2H60" style="color: #3498db; color: white;">AWS Cloud Foundation</a></p>
-</div>
-
-<div class="contact">
-    <h2>Contact Details:</h2>
-    <p>Phone: 0796128038</p>
-    <p>Email: neluhenimr4jobs@gmail.com</p>
-    <p>Email (University): 221077717@tut4life.ac.za</p>
-    <p>Address: Pretoria</p>
-</div>
-
-<div class="graph-container">
-    <h2>My Careers</h2>
-    <div class="graph">
-        <div class="bar" style="height: 60%;">
-            <span>Business Analyst</span>
+    <!-- Education Card -->
+    <div class="card" id="education">
+        <h2 onclick="toggleContent('education')">Education <span class="icon"></span></h2>
+        <div class="content" style="display: none;">
+            <p>*Swongozwi Secondary School (NCS): 2019</p>
+			<p>
+            <p>*Tshwane University of Technology: 2020-2023</p>
+            <p>Diploma in Informatics ICT </p>
         </div>
-        <div class="bar" style="height: 80%;">
-            <span>System Analyst</span>
+    </div>
+
+    <!-- Work Experience Card -->
+    <div class="card" id="workExperience">
+        <h2 onclick="toggleContent('workExperience')">Work Experience <span class="icon"></span></h2>
+        <div class="content" style="display: none;">
+            <p>Business Analyst: 2023 August - Present</p>
+            <p>ICEP</p>
         </div>
-        <div class="bar" style="height: 40%;">
-            <span>IT Project Manager</span>
+    </div>
+
+    <!-- Projects Card -->
+    <div class="card" id="projects">
+        <h2 onclick="toggleContent('projects')">Projects <span class="icon"></span></h2>
+        <div class="content" style="display: none;">
+            <p>* Smart Eye Care System (Final Year TUT Informatics Student Project):
+
+Our Smart Eye Care System is an innovative solution designed to revolutionize the way eye testing procedures are conducted. This project aims to provide a seamless online platform for both patients and ophthalmologists, enhancing accessibility, efficiency, and accuracy in eye care.</p>
+            <p>*
+Q-phela: Empowering Communities through the ICEP Mobile App to Raise Awareness and Reduce Crime
+
+In an age where digital technology plays an increasingly pivotal role in our lives, we are proud to introduce "Q-phela," an innovative mobile application designed with a clear mission: to empower communities, raise awareness, and effectively reduce crime.</p>
         </div>
-        <div class="bar" style="height: 70%;">
-            <span>System Tester</span>
+    </div>
+
+    <!-- Achievements Card -->
+    <div class="card" id="achievements">
+        <h2 onclick="toggleContent('achievements')">Achievements <span class="icon"></span></h2>
+        <div class="content" style="display: none;">
+            <ul>
+                <li>2019 Swongozwi Best Learner</li>
+                <li>2023 Merit Bursaries awarded from Tshwane University of Technology for performance in my final year</li>
+            </ul>
         </div>
-        <div class="bar" style="height: 50%;">
-            <span>Database Administrator</span>
+    </div>
+
+    <!-- Certificates Card -->
+    <div class="card" id="certificates">
+        <h2 onclick="toggleContent('certificates')">Certificates <span class="icon"></span></h2>
+        <div class="content" style="display: none;">
+            <p>Code C1 driver's license</p>
+            <p><a href="https://www.credly.com/go/0Hsf2H60" style="color: #3498db; color: white;">AWS Cloud Foundation</a></p>
         </div>
-        <!-- Add more careers -->
-       <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="card" id="contact">
+        <h2 onclick="toggleContent('contact')">Contact Details <span class="icon"></span></h2>
+        <div class="content" style="display: none;">
+            <p>Phone: 0796128038</p>
+            <p>Email: neluhenimr4jobs@gmail.com</p>
+            <p>Email (University): 221077717@tut4life.ac.za</p>
+            <p>Address: Pretoria</p>
+        </div>
+    </div>
+</div>
+
+<h1> WHO IS NELUHENI MR at TUT</h1>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/RTIUESb5NdY" title="Neluheni MR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://youtu.be/RTIUESb5NdY
 </head>
 <body>
-
+    
 </body>
 </html>
 
         </div>
     </div>
 </div>
-    <iframe width="415" height="415" src="https://www.youtube.com/embed/f4MS6R5lfEE" title="Advanced Diploma in Informatics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</html>
+
+<script>
+    // JavaScript function to toggle content visibility
+    function toggleContent(id) {
+        var content = document.getElementById(id).getElementsByClassName('content')[0];
+        var icon = document.getElementById(id).getElementsByClassName('icon')[0];
+
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            icon.innerHTML = "-";
+        } else {
+            content.style.display = "none";
+            icon.innerHTML = "+";
+        }
+    }
+</script>
 </body>
 </html>
+
