@@ -7,406 +7,99 @@
    <img src="/crop/h298/w1101/102/2023 files/Banners/informatics-banner-2.zp240833.jpg" class="img-fluid d-block" alt="" draggable="false">
 </head><style>
 
-<style>
-	* {
-		margin: 0;
-		padding: 0;
-	}
-
-	.navbar {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: sticky;
-		top: 0;
-		cursor: pointer;
-	}
-
-	.background {
-		background: black;
-		background-blend-mode: darken;
-		background-size: cover;
-	}
-
-	.nav-list {
-		width: 70%;
-		display: flex;
-		align-items: center;
-	}
-
-	.logo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.logo img {
-		width: 180px;
-		border-radius: 50px;
-	}
-
-	.nav-list li {
-		list-style: none;
-		padding: 26px 30px;
-	}
-
-	.nav-list li a {
-		text-decoration: none;
-		color: white;
-	}
-
-	.nav-list li a:hover {
-		color: grey;
-	}
-
-	.rightnav {
-		width: 30%;
-		text-align: right;
-	}
-
-	#search {
-		padding: 5px;
-		font-size: 17px;
-		border: 2px solid grey;
-		border-radius: 9px;
-	}
-
-	.firstsection {
-		background-color: green;
-		height: 400px;
-	}
-
-	.secondsection {
-		background-color: blue;
-		height: 400px;
-	}
-
-	.box-main {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: black;
-		max-width: 80%;
-		margin: auto;
-		height: 80%;
-	}
-
-	.firsthalf {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.secondhalf {
-		width: 30%;
-	}
-
-	.secondhalf img {
-		width: 70%;
-		border: 4px solid white;
-		border-radius: 150px;
-		display: block;
-		margin: auto;
-	}
-
-	.text-big {
-		font-family: 'Piazzolla', serif;
-		font-weight: bold;
-		font-size: 35px;
-	}
-
-	.text-small {
-		font-size: 18px;
-	}
-
-	.btn {
-		padding: 8px 20px;
-		margin: 7px 0;
-		border: 2px solid white;
-		border-radius: 8px;
-		background: none;
-		color: white;
-		cursor: pointer;
-	}
-
-	.btn-sm {
-		padding: 6px 10px;
-		vertical-align: middle;
-	}
-
-	.section {
-		height: 400px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		max-width: 90%;
-		margin: auto;
-	}
-
-	.section-Left {
-		flex-direction: row-reverse;
-	}
-
-	.paras {
-		padding: 0px 65px;
-	}
-
-	.thumbnail img {
-		width: 250px;
-		border: 2px solid black;
-		border-radius: 26px;
-		margin-top: 19px;
-	}
-
-	.center {
-		text-align: center;
-	}
-
-	.text-footer {
-		text-align: center;
-		padding: 30px 0;
-		font-family: 'Ubuntu', sans-serif;
-		display: flex;
-		justify-content: center;
-		color: white;
-	}
-	/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and general styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
-
-/* Header styles */
-.navbar {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-}
-
-.nav-list ul {
-    list-style: none;
-    display: flex;
-}
-
-.nav-list ul li {
-    margin-right: 20px;
-}
-
-.nav-list ul li:last-child {
-    margin-right: 0;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-list a:hover {
-    color: #3498db;
-}
-
-/* Main content styles */
-.background {
-    background: url('your-background-image.jpg') center/cover no-repeat;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.secondhalf img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 4px solid #333;
-}
-
-.section {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer styles */
-.text-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Card styles */
-.card {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.card .content {
-    display: none;
-}
-
-.card .icon::before {
-    content: "+";
-    float: right;
-    font-weight: bold;
-}
-
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-    .nav-list {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .nav-list ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-list ul li {
-        margin: 10px 0;
-    }
-}
-.career-progress {
-            background-color: #f2f2f2;
-            padding: 20px 0;
-            text-align: center;
+ <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .career-bar {
+        /* Body and general styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Header styles */
+        .navbar {
+            background-color: #333;
+            color: white;
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .career-label {
-            font-weight: bold;
-        }
-
-        .career-bar-container {
-            background-color: #3498db;
-            border-radius: 5px;
-            height: 30px;
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .career-bar-fill {
-            background-color: #2ecc71;
-            height: 100%;
-            width: 0;
-            position: absolute;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
             top: 0;
-            left: 0;
-            animation: fillAnimation 2s ease-in-out;
         }
 
-        @keyframes fillAnimation {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 70%; /* Adjust this value to represent your career progress */
-            }
+        .nav-list ul {
+            list-style: none;
+            display: flex;
         }
-		/* Add this CSS to create a continuous moving green bar */
-@keyframes moveGreenBar {
-    0% {
-        left: -100%; /* Start off the screen on the left */
-    }
-    100% {
-        left: 100%; /* Move to the right, off the screen */
-    }
-}
 
-.career-bar-fill.green {
-    background-color: #2ecc71;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -100%; /* Start off the screen on the left */
-    animation: moveGreenBar 10s linear infinite; /* Adjust duration and timing as needed */
-}
+        .nav-list ul li {
+            margin-right: 20px;
+        }
 
+        .nav-list ul li:last-child {
+            margin-right: 0;
+        }
 
-</style>
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
 
+        .nav-list a:hover {
+            color: #3498db;
+        }
 
+        /* Main content styles */
+        .background {
+            background: url('your-background-image.jpg') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-</style>
-<body>
-<div class="profile">
-    <h2>Name:Neluheni Mutshidzi Ramudzuli</h2>
-	<h6>
-	<h6 style="text-align: center;">
-    <img width="160" src="https://media.licdn.com/dms/image/D4D35AQFVMHLP_C6SZw/profile-framedphoto-shrink_100_100/0/1681410136803?e=1697547600&amp;v=beta&amp;t=G_EQb1R6Cq8U0pP0qAAMgVcuC073rC6EXIlhPoUcXQM" loading="lazy" height="160" alt="Photo of Neluheni Mutshidzi Ramudzuli" id="ember12938" class="feed-identity-module__member-photo EntityPhoto-circle-5 evi-image lazy-image ember-view">
-    <p>My CV Profile</p>
-</h6>
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
 
-	</h6>
-	<style>
-	#h6{
-	
-	position:center;
-	
-	}
-	</style>
-</div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neluheni's Portfolio</title>
-    <style>
-        /* Your existing CSS styles */
-        /* ... */
+        .secondhalf img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #333;
+        }
 
-        /* Add styles for the card container */
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .text-footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Card styles */
         .card {
             border: 1px solid #ccc;
             padding: 10px;
@@ -414,10 +107,26 @@ body {
             cursor: pointer;
         }
 
-        /* Style for the expand/collapse icon */
         .card .icon::before {
             content: "+";
             float: right;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .nav-list {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .nav-list ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-list ul li {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
