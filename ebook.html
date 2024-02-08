@@ -109,6 +109,22 @@
             height: 20px;
             margin-right: 5px;
         }
+
+        /* iFrame styles */
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* Aspect ratio 16:9 */
+            margin-top: 20px;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -220,8 +236,18 @@
                 <p>Neluheni is a skilled Business Informatics professional with hands-on experience in Business Analysis. With a strong foundation in informatics and a passion for leveraging technology to drive business success, Neluheni is dedicated to delivering innovative solutions that meet the needs of organizations and drive growth.</p>
             </div>
         </div>
+
+        <!-- iFrame Card -->
+        <div class="card" id="iframe">
+            <h2>Form</h2>
+            <div class="content">
+                <div class="iframe-container">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvg5-M7TgQMWOlFgIfeOjKOfEKdB2Od5ic5Njm9bN8qrR9sg/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
     </div>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvg5-M7TgQMWOlFgIfeOjKOfEKdB2Od5ic5Njm9bN8qrR9sg/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
     <footer class="text-footer">
         &copy; 2024 Neluheni's Portfolio. All rights reserved.
     </footer>
