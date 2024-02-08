@@ -6,7 +6,245 @@
     <title>Neluheni's Portfolio</title>
     <style>
         /* Reset default margin and padding */
+        * {<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neluheni's Portfolio</title>
+    <style>
+        /* Reset default margin and padding */
         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-list ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-list ul li {
+            margin-right: 20px;
+        }
+
+        .nav-list ul li:last-child {
+            margin-right: 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-list a:hover {
+            color: #3498db;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .card .content {
+            display: none;
+        }
+
+        .card.active .content {
+            display: block;
+        }
+
+        /* Footer styles */
+        .text-footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Icon styles */
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Neluheni's Portfolio</h1>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#workExperience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <li><a href="#skills">Skills</a></li>   
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Education Card -->
+        <div class="card" id="education">
+            <h2>Education</h2>
+            <div class="content">
+                <p>*Swongozwi Secondary School (NCS): 2019</p>
+                <p>*Tshwane University of Technology: 2020-2023</p>
+                <p>Diploma in Informatics ICT </p>
+            </div>
+        </div>
+
+        <!-- Work Experience Card -->
+        <div class="card" id="workExperience">
+            <h2>Work Experience</h2>
+            <div class="content">
+                <p>Business Analyst: 2023 August - Present</p>
+                <p>ICEP</p>
+            </div>
+        </div>
+
+        <!-- Projects Card -->
+        <div class="card" id="projects">
+            <h2>Projects</h2>
+            <div class="content">
+                <p>* <a href="https://files.fm/f/qhpdsauatj"><img class="icon" src="https://img.icons8.com/ios-filled/50/000000/document.png"/>System Documentation</a></p>
+                <p>* <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/document.png"/>Q-phela: Empowering Communities</p>
+                <p>Through the ICEP Mobile App to Raise Awareness and Reduce Crime In an age where digital technology plays an increasingly pivotal role in our lives, we are proud to introduce "Q-phela," an innovative mobile application designed with a clear mission: to empower communities, raise awareness, and effectively reduce crime.</p>
+            </div>
+        </div>
+
+        <!-- Achievements Card -->
+        <div class="card" id="achievements">
+            <h2>Achievements</h2>
+            <div class="content">
+                <ul>
+                    <li>2019 Swongozwi Best Learner</li>
+                    <li>2023 Merit Bursaries awarded from Tshwane University of Technology for performance in my final year</li>
+                    <li>Graduation</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Certificates Card -->
+        <div class="card" id="certificates">
+            <h2>Certificates</h2>
+            <div class="content">
+                <p>Code C1 driver's license</p>
+                <p>AWS CLOUD FOUNDATION
+    <a href="https://www.credly.com/go/0Hsf2H60" style="color: #3498db; color:black ;">AWS Cloud Foundation</a></p>
+                <p>Business Informatics Bio with Business Analysis Experience:</p>
+                <p>Neluheni is a skilled Business Analyst with expertise in utilizing business informatics principles to drive organizational success. With a focus on understanding business needs and leveraging technology solutions, Neluheni has been instrumental in analyzing business processes, identifying areas for improvement, and implementing strategic solutions. With a strong foundation in informatics and hands-on experience in business analysis, Neluheni is committed to driving innovation and efficiency in every project undertaken.</p>
+            </div>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="card" id="skills">
+            <h2>Skills</h2>
+            <div class="content">
+                <details>
+                    <summary>Business Informatics Skills</summary>
+                    <p>Business Analysis</p>
+                    <p>Data Analysis</p>
+                    <p>Requirements Gathering</p>
+                    <p>Process Improvement</p>
+                    <p>System Integration</p>
+                </details>
+                <details>
+                    <summary>BI Skills</summary>
+                    <p>Reporting Tools</p>
+                    <p>Data Visualization</p>
+                    <p>Database Management</p>
+                    <p>SQL</p>
+                </details>
+                <details>
+                    <summary>Technologies</summary>
+                    <p>AWS</p>
+                </details>
+                <details>
+                    <summary>Workshops</summary>
+                    <p>AWS Training</p>
+                    <p>2023 FOW(4IR)</p>
+                </details>
+            </div>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="card" id="contact">
+            <h2>Contact Details</h2>
+            <div class="content">
+                <p>Phone: <a href="tel:+0796128038">0796128038</a></p>
+                <p>About Me:</p>
+                <p>Neluheni is a skilled Business Informatics professional with hands-on experience in Business Analysis. With a strong foundation in informatics and a passion for leveraging technology to drive business success, Neluheni is dedicated to delivering innovative solutions that meet the needs of organizations and drive growth.</p>
+            </div>
+        </div>
+    </div>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvg5-M7TgQMWOlFgIfeOjKOfEKdB2Od5ic5Njm9bN8qrR9sg/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <footer class="text-footer">
+        &copy; 2024 Neluheni's Portfolio. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript to toggle card content
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
             margin: 0;
             padding: 0;
             box-sizing: border-box;
